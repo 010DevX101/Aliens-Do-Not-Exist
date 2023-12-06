@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{609948F5-E4CB-4833-B400-B549A45C8DA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnityEngine.PostProcessing</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\..\MemoryEd1tor\Downloads\dnSpy-net-win64\bin\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.AIModule" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.AudioModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.UIModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmbientOcclusionComponent.cs" />
+    <Compile Include="AmbientOcclusionModel.cs" />
+    <Compile Include="AntialiasingModel.cs" />
+    <Compile Include="BloomComponent.cs" />
+    <Compile Include="BloomModel.cs" />
+    <Compile Include="BuiltinDebugViewsComponent.cs" />
+    <Compile Include="BuiltinDebugViewsModel.cs" />
+    <Compile Include="ButtonsDecorator.cs" />
+    <Compile Include="ButtonsMenu.cs" />
+    <Compile Include="CharController_Motor.cs" />
+    <Compile Include="CheckpointLoader.cs" />
+    <Compile Include="CheckpointsController.cs" />
+    <Compile Include="Checkpoint_0.cs" />
+    <Compile Include="ChromaticAberrationComponent.cs" />
+    <Compile Include="ChromaticAberrationModel.cs" />
+    <Compile Include="ColorGradingComponent.cs" />
+    <Compile Include="ColorGradingCurve.cs" />
+    <Compile Include="ColorGradingModel.cs" />
+    <Compile Include="CursorLocker.cs" />
+    <Compile Include="CursorUnlocked.cs" />
+    <Compile Include="DepthOfFieldComponent.cs" />
+    <Compile Include="DepthOfFieldModel.cs" />
+    <Compile Include="DisableRenderer.cs" />
+    <Compile Include="DitheringComponent.cs" />
+    <Compile Include="DitheringModel.cs" />
+    <Compile Include="EventsAnims.cs" />
+    <Compile Include="ExampleWheelController.cs" />
+    <Compile Include="EyeAdaptationComponent.cs" />
+    <Compile Include="EyeAdaptationModel.cs" />
+    <Compile Include="FirstPersonController.cs" />
+    <Compile Include="FogComponent.cs" />
+    <Compile Include="FogModel.cs" />
+    <Compile Include="FootstepsPlayerSoundActivator.cs" />
+    <Compile Include="FPSDisplay.cs" />
+    <Compile Include="FxaaComponent.cs" />
+    <Compile Include="GetSetAttribute.cs" />
+    <Compile Include="GrainComponent.cs" />
+    <Compile Include="GrainModel.cs" />
+    <Compile Include="GraphicsUtils.cs" />
+    <Compile Include="IInteractable.cs" />
+    <Compile Include="InteractionsPlayer.cs" />
+    <Compile Include="MaterialFactory.cs" />
+    <Compile Include="MenusController.cs" />
+    <Compile Include="MinAttribute.cs" />
+    <Compile Include="MotionBlurComponent.cs" />
+    <Compile Include="MotionBlurModel.cs" />
+    <Compile Include="MutantCollider.cs" />
+    <Compile Include="MutantLogic.cs" />
+    <Compile Include="NoteInteractable.cs" />
+    <Compile Include="NotesController.cs" />
+    <Compile Include="NotesCounter.cs" />
+    <Compile Include="PostProcessingBehaviour.cs" />
+    <Compile Include="PostProcessingComponent.cs" />
+    <Compile Include="PostProcessingComponentBase.cs" />
+    <Compile Include="PostProcessingComponentCommandBuffer.cs" />
+    <Compile Include="PostProcessingComponentRenderTexture.cs" />
+    <Compile Include="PostProcessingContext.cs" />
+    <Compile Include="PostProcessingModel.cs" />
+    <Compile Include="PostProcessingProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="References.cs" />
+    <Compile Include="RenderTextureFactory.cs" />
+    <Compile Include="ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="ScreenSpaceReflectionModel.cs" />
+    <Compile Include="SoundsController.cs" />
+    <Compile Include="TaaComponent.cs" />
+    <Compile Include="TrackballAttribute.cs" />
+    <Compile Include="TrackballGroupAttribute.cs" />
+    <Compile Include="TriggerLightIntensity.cs" />
+    <Compile Include="UserLutComponent.cs" />
+    <Compile Include="UserLutModel.cs" />
+    <Compile Include="VignetteComponent.cs" />
+    <Compile Include="VignetteModel.cs" />
+    <Compile Include="VolverAlMenu.cs" />
+    <Compile Include="WaterFloat.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
